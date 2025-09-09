@@ -27,7 +27,6 @@
     <types>
         <members>CLevelRelationship__c.AccountRef__c</members>
         <members>CLevelRelationship__c.ContactRef__c</members>
-        <members>CLevelRelationship__c.UserRef__c</members>
         <name>CustomField</name>
     </types>
     <types>
