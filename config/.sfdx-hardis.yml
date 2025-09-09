@@ -12,3 +12,5 @@ useDeltaDeployment: true
 useSmartDeploymentTests: false
 allowedOrgTypes:
   - sandbox
+deploymentPlan:
+  packages: []
