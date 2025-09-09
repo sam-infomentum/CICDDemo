@@ -58,20 +58,20 @@ jobs:
           SFDX_CLIENT_KEY_PREPROD: ${{ secrets.SFDX_CLIENT_KEY_PREPROD}}
           SFDX_CLIENT_ID_MAIN: ${{ secrets.SFDX_CLIENT_ID_MAIN}}
           SFDX_CLIENT_KEY_MAIN: ${{ secrets.SFDX_CLIENT_KEY_MAIN}}
-          SFDX_AUTH_URL_TECHNICAL_ORG: ${{ secrets.SFDX_AUTH_URL_TECHNICAL_ORG }}
+          #SFDX_AUTH_URL_TECHNICAL_ORG: ${{ secrets.SFDX_AUTH_URL_TECHNICAL_ORG }}
           SFDX_DEPLOY_WAIT_MINUTES: 120 # Override if necessary
           SFDX_TEST_WAIT_MINUTES: 120 # Override if necessary
           CI_COMMIT_REF_NAME: ${{ env.BRANCH }} # Defines the target branch of the PR
           ORG_ALIAS: ${{ env.BRANCH }} # Defines the target branch of the PR
           CONFIG_BRANCH: ${{ env.BRANCH }} # Defines the target branch of the PR
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          SLACK_TOKEN: ${{ secrets.SLACK_TOKEN }}
-          SLACK_CHANNEL_ID: ${{ secrets.SLACK_CHANNEL_ID }}
-          NOTIF_EMAIL_ADDRESS: ${{ secrets.NOTIF_EMAIL_ADDRESS }}
-          JIRA_HOST: ${{ secrets.JIRA_HOST }}
-          JIRA_EMAIL: ${{ secrets.JIRA_EMAIL }}
-          JIRA_TOKEN: ${{ secrets.JIRA_TOKEN }}
-          JIRA_PAT: ${{ secrets.JIRA_HOST }}
+          #GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          #SLACK_TOKEN: ${{ secrets.SLACK_TOKEN }}
+          #SLACK_CHANNEL_ID: ${{ secrets.SLACK_CHANNEL_ID }}
+          #NOTIF_EMAIL_ADDRESS: ${{ secrets.NOTIF_EMAIL_ADDRESS }}
+          #JIRA_HOST: ${{ secrets.JIRA_HOST }}
+          #JIRA_EMAIL: ${{ secrets.JIRA_EMAIL }}
+          #JIRA_TOKEN: ${{ secrets.JIRA_TOKEN }}
+          #JIRA_PAT: ${{ secrets.JIRA_HOST }}
           FORCE_COLOR: "1"
         run: |
           echo "Process SFDX deployment using Hardis against \"$CONFIG_BRANCH\""
